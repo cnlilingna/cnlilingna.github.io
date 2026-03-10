@@ -7,14 +7,44 @@
 
 <style>
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family: Arial, Helvetica, sans-serif;
-max-width:1000px;
+max-width:1100px;
 margin:auto;
-line-height:1.7;
+line-height:1.8;
 padding:40px;
 background:#ffffff;
 }
+
+/* 固定导航栏 */
+
+nav{
+position:sticky;
+top:0;
+background:white;
+padding:15px 0;
+border-bottom:1px solid #eee;
+z-index:1000;
+margin-bottom:40px;
+}
+
+nav a{
+margin-right:25px;
+text-decoration:none;
+font-weight:700;
+color:#1a4f8b;
+font-size:18px;
+}
+
+nav a:hover{
+color:#e63946;
+}
+
+/* 头像区 */
 
 .header{
 display:flex;
@@ -26,31 +56,39 @@ margin-bottom:40px;
 width:170px;
 border-radius:50%;
 margin-right:30px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
 }
 
 h1{
 margin-bottom:5px;
-font-size:38px;
-}
-
-nav{
-margin-top:15px;
-margin-bottom:40px;
-}
-
-nav a{
-margin-right:25px;
-text-decoration:none;
-font-weight:bold;
-color:#2c3e50;
+font-size:42px;
+letter-spacing:1px;
 }
 
 section{
-margin-bottom:50px;
+margin-bottom:60px;
 }
 
 h2{
 color:#2c3e50;
+border-bottom:2px solid #eee;
+padding-bottom:5px;
+}
+
+/* 按钮 */
+
+.button{
+display:inline-block;
+background:#1a4f8b;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+margin-top:10px;
+}
+
+.button:hover{
+background:#e63946;
 }
 
 </style>
@@ -82,19 +120,15 @@ color:#2c3e50;
 <nav>
 
 <a href="#about">About</a>
-
-<a href="#research">Research Interests</a>
-
-<a href="#experience">International Academic Experience</a>
-
-<a href="#projects">Research Projects</a>
-
-<a href="#awards">Awards & Competitions</a>
-
+<a href="#research">Research</a>
+<a href="#focus">Research Focus</a>
+<a href="#publications">Publications</a>
+<a href="#experience">International Experience</a>
+<a href="#projects">Projects</a>
+<a href="#awards">Awards</a>
 <a href="#contact">Contact</a>
 
 </nav>
-
 
 
 <section id="about">
@@ -103,28 +137,18 @@ color:#2c3e50;
 
 <p>
 Li Lingna is a PhD researcher in Sociology of Education at Universiti Pendidikan Sultan Idris (Malaysia).
-She received her Master's degree in Curriculum and Instruction (English) from Northwest Normal University in China.
+She obtained her Master's degree in Curriculum and Instruction (English) from Northwest Normal University in China.
 </p>
 
 <p>
-Before pursuing doctoral studies, she worked within the Qingyang Municipal Education System and accumulated
-extensive teaching experience across the full spectrum of basic education, including primary school, middle
-school, and high school English teaching. Her professional experience spans both rural and urban educational contexts.
+Before pursuing doctoral studies, she worked within the Qingyang Municipal Education System in China and accumulated extensive teaching experience across the full spectrum of basic education, including primary school, middle school, and high school English teaching.
 </p>
 
 <p>
-Her academic work focuses on sociocognitive perspectives in language learning, cross-cultural cognition,
-and structural deviations in English learning. She is particularly interested in how language structure
-reflects cognitive patterns across cultures and how these differences influence second language acquisition.
-</p>
-
-<p>
-Through her research and educational practice, she aims to bridge classroom teaching experience with
-theoretical insights from sociocognitive linguistics and multicultural education.
+Her professional experience spans both rural and urban educational contexts, providing her with rich insights into language education practice.
 </p>
 
 </section>
-
 
 
 <section id="research">
@@ -143,23 +167,48 @@ theoretical insights from sociocognitive linguistics and multicultural education
 
 <li>Multicultural and intercultural education</li>
 
-<li>AI-assisted language learning and language education innovation</li>
+<li>AI-assisted language learning</li>
 
 </ul>
 
 </section>
 
 
+<section id="focus">
+
+<h2>Research Focus</h2>
+
+<p>
+Her research focuses on sociocognitive mechanisms underlying structural deviations in English learning, examining how linguistic structures reflect different cognitive patterns across cultures.
+</p>
+
+<p>
+Her doctoral work aims to develop a framework explaining structural deviations in English learning from a sociocognitive perspective.
+</p>
+
+</section>
+
+
+<section id="publications">
+
+<h2>Publications</h2>
+
+<ul>
+
+<li>Research on structural deviations in English learning from a sociocognitive perspective.</li>
+
+<li>Studies on cross-cultural cognition and language learning.</li>
+
+<li>Research on AI-assisted language learning in primary education.</li>
+
+</ul>
+
+</section>
+
 
 <section id="experience">
 
-<h2>International Academic Visits and Exchanges</h2>
-
-<p>
-Li Lingna has participated in academic visits, research exchanges, and educational activities at
-multiple universities and institutions across different regions of the world. These international
-experiences have provided her with broad perspectives on global education systems and intercultural learning.
-</p>
+<h2>International Academic Experience</h2>
 
 <ul>
 
@@ -171,7 +220,7 @@ experiences have provided her with broad perspectives on global education system
 
 <li>Universities in Qatar</li>
 
-<li>Universities in Dubai and the Middle East region</li>
+<li>Universities in Dubai and the Middle East</li>
 
 <li>Universities in Singapore</li>
 
@@ -184,39 +233,23 @@ experiences have provided her with broad perspectives on global education system
 </section>
 
 
-
 <section id="projects">
 
 <h2>Research Projects</h2>
 
 <ul>
 
-<li>
-Principal Investigator of a Provincial-level Educational Research Project focusing on
-English education and cognitive differences in language learning.
-</li>
+<li>Principal Investigator of a Provincial-level Educational Research Project.</li>
 
-<li>
-Participant in multiple educational research projects related to curriculum development,
-language teaching innovation, and language learning research.
-</li>
+<li>Participation in multiple educational innovation projects.</li>
 
-<li>
-Research on structural deviations in English learning from a sociocognitive perspective.
-</li>
+<li>Research on structural deviations in English learning.</li>
 
-<li>
-Research on AI-assisted English teaching and language learning tools in primary education.
-</li>
-
-<li>
-Participation in educational innovation and technology-based teaching projects.
-</li>
+<li>Research on AI-assisted English teaching tools.</li>
 
 </ul>
 
 </section>
-
 
 
 <section id="awards">
@@ -225,18 +258,17 @@ Participation in educational innovation and technology-based teaching projects.
 
 <ul>
 
-<li>Provincial-level award for teaching innovation and teaching case design.</li>
+<li>Provincial-level award for teaching innovation.</li>
 
-<li>Participation in national and regional educational innovation competitions.</li>
+<li>Participation in national educational innovation competitions.</li>
 
-<li>Guidance of student projects and participation in educational technology competitions.</li>
+<li>Guidance of student research projects and competitions.</li>
 
-<li>Development of innovative educational tools and technology-based teaching practices.</li>
+<li>Development of innovative educational tools.</li>
 
 </ul>
 
 </section>
-
 
 
 <section id="contact">
@@ -245,8 +277,11 @@ Participation in educational innovation and technology-based teaching projects.
 
 <p>Email: cnlilingna@163.com</p>
 
-</section>
+<p>
+<a href="Li_Lingna_CV.pdf" class="button">Download CV</a>
+</p>
 
+</section>
 
 
 </body>
